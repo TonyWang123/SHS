@@ -14,6 +14,8 @@ import org.apache.mina.filter.codec.textline.TextLineCodecFactory;
 import org.apache.mina.filter.logging.LoggingFilter;
 import org.apache.mina.transport.socket.nio.NioSocketConnector;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 
 public class SHSClient {
 	
@@ -85,21 +87,26 @@ public class SHSClient {
 		ObjectMapper mapper = new ObjectMapper();
 		
 		session.write("register job");
+		return null;
 	}
 
 	public String addDataTransferTask(){
+		return null;
 		
 	}
 	
 	public String addSyncTask(){
+		return null;
 		
 	}
 	
 	public boolean removeTask(String jobId, String taskId){
+		return false;
 		
 	}
 	
 	public boolean closeJob(String jobId){
+		return false;
 		
 	}
 	
